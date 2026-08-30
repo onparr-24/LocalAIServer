@@ -239,6 +239,7 @@ docker compose ps
 ```bash
 docker exec -it ollama ollama pull qwen2.5:7b
 docker exec -it ollama ollama pull llama3.1:8b
+docker exec -it ollama ollama run hf.co/majentik/gemma-4-E4B-RotorQuant-GGUF-IQ4_XS:IQ4_XS
 ```
 
 > Ollama runs *inside the container* — there's no bare `ollama` binary on the host, so every pull/run command needs `docker exec -it ollama ...` in front of it.
